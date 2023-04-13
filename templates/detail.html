@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td, tr {
+            border: 1px solid red;
+        }
+    </style>
+    <title>detail</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>선수 id</th>
+            <th>선수 이름</th>
+            <th>팀이름</th>
+            <th>몸무게</th>
+            <th>키</th>
+        </tr>
+        {% for row in result_table%}
+        <tr>
+            <td>{{row.player_id}}</td>
+            <td>{{row.player_name}}</td>
+            <td>{{row.team_name}}</td>
+            <td>{{row.weight}}</td>
+            <td>{{row.height}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
