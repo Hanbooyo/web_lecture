@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import openai
 
 # 발급받은 API 키 설정
-OPENAI_API_KEY = "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" # 발급받은 api 키 작성
+OPENAI_API_KEY = "" # 발급받은 api 키 작성
 
 # openai API 키 인증
 openai.api_key = OPENAI_API_KEY
