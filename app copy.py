@@ -36,7 +36,7 @@ response = openai.ChatCompletion.create(
 )
 answer = response['choices'][0]['message']['content']
 print(answer)
-z
+
 #Flask객체 인스턴스 생성
 app = Flask(__name__) # app이라는 플라스크 인스턴스 생성
 
